@@ -1,7 +1,6 @@
 sudo: required
 services:
   - docker
-
 before-install:
   - docker build -t rammohane/docker-react -f Dockerfile.dev .
 script:
