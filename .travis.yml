@@ -6,4 +6,4 @@ before-install:
   - docker build -t rammohane/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run rammohane/docker-react npm run test -- --coverage
+  - docker run CI=true rammohane/docker-react npm run test -- --coverage
